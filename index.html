@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" >
+<!-- manifest="cache.appcache" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+		<title>Minerva Preso</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta name="description" content="simple slides for WCAG">
+		<meta name="author" content="Josh Knutson">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+		td.vtop{vertical-align: top;}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Web Accessibility Guidelines</h1>
+					<h3>make your code Web Accessible</h3>
+				</section>
+				<section>
+					<h3>Josh Knutson</h3>
+					<ul>
+						<li>Lead Software Developer</li>
+						<li>@ Imagtrend for 13+ years</li>
+						<li>Working in CF, JS, CSS, and some .NET</li>
+					</ul>
+				</section>
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Standards</h2>
+						<ul>
+							<li>World Wide Web Consortium(W3C)</li>
+							<li>Web Accessibility Initiative(WAI)</li>
+							<li>Web Content Accessibility Guidelines(WCAG)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>History</h2>
+						<ul>
+							<li>WCAG 2.0 - 2008</li>
+						</ul>
+					</section>
+					<section>
+						<h2>WCAG</h2>
+						<ul>
+							<li>4 Principles
+								<ul>
+									<li>Perceivable</li>
+									<li>Operable</li>
+									<li>Understandable</li>
+									<li>Robust</li>
+								</ul>
+							</li>
+							<li>12 General Guidelines</li>
+							<li>61 testable criteria</li>
+							<li>3 Levels of conformance</li>
+						</ul>
+						<section id="principles">
+							<ul>
+								<li>4 Perceivable Principle
+									<ol><li>Provide text alternative</li><li>Provide alternative for time-based media</li><li>Provided alternative format</li><li>Make it easier for uses to see and hear content - separate the foreground from the background</li></ol>
+								</li>
+								<li>4 Operable Principle
+									<ol><li>Make all functionality available for keyboard</li><li>Provide users with enough time to read and use content</li><li>Do not design content in a way that is known to cause seizures</li><li>Provide ways to help users navigate (&lt;nav&gt;&lt;sitemap&gt;, find content (search, skip to content) and determine where they are (proper page title)</li></ol>
+								</li>
+								<li>3 Understandable Principles
+									<ol><li>Make content readable and understandable.</li><li>Make web pages appear and operate in predictable ways (just good design)</li><li>Help users avoid and correct mistakes</li></ol>
+								</li>
+								<li>1 Robust Principle
+									<ol><li>Maximize compatibility with current and future user agents including assertive technologies. This can be accomplished by implementing technology in the following order: HTML, CSS, Javascript.</li></ol>
+								</li>
+							</ul>
+						</section>
+						<section id="conformance">
+							<p>Organizations getting on board have a choice of complying with these guidelines at one of three levels: A, AA and AAA. While this last one is rarely achievable with today's technology if you want your website to be presentable to those who aren't visually impaired, a case could be made that folks meeting level A could have done better. As a result, Level AA seems to be the level of choice.<br> While the accessibility benefits are obvious, what most people don't realize is that search engines fall into this class. Implementing a standard like WCAG 2.0 Level AA can have tremendous benefits search engines in better understanding the content on your website.<br> If you've been around the web, there are obviously some website that are difficult to understand, regardless of who you are. If your customers and search engines don't understand the content on your website and they find it difficult to find what they are looking for, who is your website for?</p>
+						</section>
+					</section>
+					<section>
+						<h2>Disablity Categories</h2>
+						<ul>
+							<li>Visual</li>
+							<li>Audio</li>
+							<li>Motor</li>
+							<li>Cognitive</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Development</h2>
+					<ul>
+						<li>
+							Don't Panic
+							<ul>
+								<li>Seperate your html from your css and JavaScript</li>
+								<li>Provide Alternatives</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Tools</h2>
+					<div>
+						<ul>
+							<li><a href="https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd">axe - Web Accessibility Testing</a></li>
+							<li><a href="https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn">ChromeVox Classic Extension</a></li>
+							<li><a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh">WAVE Evaluation Tool</a></li>
+							<li><a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni">Accessibility Insights for Web</a></li>
+							<li><a href="https://siteimprove.com/en-us/">Siteimprove</a></li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Additional Information</h2>
+					<div>
+						<ul>
+							<li><a href="http://www.w3.org/TR/WCAG20/" target="_blank" rel="noopener noreferrer">Web Content Accessibility
+									Guidelines (WCAG) 2.0</a></li>
+							<li><a href="http://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
+							<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a></li>
+							<li><a href="http://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</a></li>
+							<li><a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="middle formula">
+					<p>
+						Questions?
+					</p>
+				</section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		// Check if new appcache is available, load it, and reload page.
+		  if (window.applicationCache) {
+			window.applicationCache.addEventListener('updateready', function(e) {
+			  if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+				  window.applicationCache.swapCache();
+				if (confirm('A new version of this site is available. Load it?')) {
+				  window.location.reload();
+				}
+			  }
+			}, false);
+		  }
+		</script>
+	</body>
+</html>
